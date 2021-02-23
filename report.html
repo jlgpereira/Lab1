@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Report </title>
+</head>
+<body bgcolor="#A9A9A9"></body>
+    <hr>  </hr>
+    <br>
+    <h1> Endereços IP </h1>
+    <p>Obter a informação sobre o IP do PC e do telemóvel </p>
+    <p> Ir ao Google e escrever "what is my ip" e irá obter o IP associado. Anote onde está localizado, usando por exemplo a ferramenta  <a href="https://whatismyipaddress.com/ip-lookup"> whatismyipaddress</a>.</p>
+    <p>Imagem obtida sobre o <b>IP do Computador</b> </p>
+
+    <img src="img/WhatIsMyAdress_PC2.png">
+    <p>Imagem obtida sobre o <b>IP do telemóvel</b> </p>
+    <img src="img/TeleMovel_IP.png">
+    <hr> </hr>
+    <br>
+    <h1> TraceRoute  </h1>
+    <p>Esta pagina reporta o rastreiamento de pacotes IP, desde um computador até um endereço IP destino/ou URL que especificamos. Este identifica os routers pelos quais os pacotes passam até o seu destino, indicando o tempo que demoram por "salto" entre router. No caso realizamos este rastreio com a <a href="https://dashboard.heroku.com/apps/lab1-joao/deploy/github"> app</a> criada anteriormente no Laboratorio 1 no servidor Heroku. </p>
+    <p>Foi utilizada a ferramenta, <a href="https://geotraceroute.com/"> GeoTraceroute</a>:</p>
+    <p>Após a utlização da ferramenta anteriormente identifcada obtemos a imagem e os seguintes dados: </p>
+    <img src="img/TraceRouteHeroku.png">
+    <hr>  </hr>
+    <br>
+    <h1> Inspect </h1>
+    <p>Foi utilizado o browser Chrome com a ferramenta (developer tool) que permite inspeccionar ficheiros descarregados, permitindo analisar uma grande variedade de informação. Abriu-se a página, clicando no botão direito do rato e selecionando a opção Inspect, tambem é possivel a partir da seguinte sequencia de teclas, Ctrl+Shift+i.Selecione a barra network. Clique na janela do seu browser onde está o URL do seu site e faça novamente Enter: </p>
+    <img src="img/Capturar.png">
+    <ul>
+        <li>Obtemos a informação como o nome do recurso, o código de status HTTP, o tipo MIME do recurso solicitado, o objeto/processo que iniciou a solicitação, o seu tamanho e os tempos de download</li>
+        <li>Na sequencia do clique no link que carregamos foram descarregados 57 ficheiros</li>
+        <li>Tipos de ficheiros descarregado: Document,Script,Stylesheet,Font,Xhr,Webp,Svg+xml,Png </li>
+        <li>Ao seleccionar cada um dos ficheiros, observa-se o seguinte em cada item</li>
+        <ol><li> Headers    --> Cabeçalhos HTTP associados ao recurso. </li>
+            <li> Preview    --> Visualizações de recursos JSON, imagem e texto </li>
+            <li> Timming    --> Uma análise do ciclo de vida da solicitação para o recurso </li>
+        </ol>
+    </ul>
+</body>
+</html>
